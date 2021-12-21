@@ -7,7 +7,7 @@
  * @author     Muhammet ŞAFAK <info@muhammetsafak.com.tr>
  * @copyright  Copyright © 2021 PHPLanguagesSupport
  * @license    https://github.com/muhametsafak/PHPLanguagesSupport/blob/main/LICENSE MIT
- * @version    1.0
+ * @version    1.0.1
  * @link       https://www.muhammetsafak.com.tr
  */
 
@@ -97,7 +97,7 @@ class Language
             [$base, $baseKey] = [self::$config['base'], $key];
         }
         $base = \strtolower($base);
-        $baseKey = \strtolower($base);
+        $baseKey = \strtolower($key);
         if($default === null){
             $default = $key;
         }
